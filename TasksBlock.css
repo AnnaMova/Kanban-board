@@ -1,0 +1,39 @@
+.tasks-block {
+  box-sizing: border-box;
+  width: 282px;
+  height: fit-content;
+  max-height: calc(100% - 25px);
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #ebecf0;
+  border-color: none;
+  padding: 12px;
+}
+
+.tasks-block__title {
+  margin-bottom: 12px;
+}
+
+.tasks-block__btn {
+  background-color: var(--blue1);
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  /* color: #5e6c84; */
+  color: white;
+}
+
+.tasks-block__input,
+.tasks-block__textarea {
+  margin-bottom: 12px;
+  width: calc(100% - 12px);
+}
+
+@media (max-width: 600px) {
+  .tasks-block {
+    height: 300px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}

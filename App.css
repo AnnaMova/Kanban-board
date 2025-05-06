@@ -1,0 +1,55 @@
+.App {
+  --blue1: #0067a3;
+
+  background-color: #0079bf;
+  /* font-family: Roboto; */
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.header {
+  background-color: var(--blue1);
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--blue1);
+  color: white;
+  padding: 17px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.App {
+  height: 100vh;
+
+  --headerHeigth: 77px;
+  --footerHeigth: 56px;
+}
+
+.main {
+  /* box-sizing: border-box; */
+  height: calc(100vh - var(--headerHeigth) - var(--footerHeigth));
+  overflow-y: auto;
+  /* padding: 25px 20px; */
+}
+
+.btn {
+  background-color: var(--blue1);
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}

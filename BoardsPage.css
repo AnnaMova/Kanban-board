@@ -1,0 +1,27 @@
+.boards-page__h {
+  color: white;
+}
+
+.boards-page__tasks-count {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.boards-page {
+  box-sizing: border-box;
+  /* height: calc(100vh - var(--headerHeigth) - var(--footerHeigth)); */
+  height: 100%;
+  gap: 25px;
+  display: flex;
+  padding: 12px 25px;
+}
+
+@media (max-width: 600px) {
+  .boards {
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: block;
+    overflow-y: auto;
+  }
+}

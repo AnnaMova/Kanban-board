@@ -1,0 +1,43 @@
+.task-page {
+  margin: 25px;
+  padding: 25px;
+  height: calc(100% - 50px);
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.task-page__head {
+  display: flex;
+  justify-content: space-between;
+}
+.task-page__header {
+  margin: 0;
+}
+.task-page__cross {
+  width: 30px; /* Размер блока */
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.task-page__cross::before,
+.task-page__cross::after {
+  content: "";
+  display: block;
+  background-color: black; /* Цвет линий */
+  width: 30px; /* Ширина каждой линии */
+  height: 1px; /* Толщина линии */
+  position: absolute;
+  top: calc(50% - 2px); /* Центрирование по вертикали */
+  left: 0;
+}
+
+/* Первая линия крестика */
+.task-page__cross::before {
+  transform: rotate(-45deg);
+}
+
+/* Вторая линия крестика */
+.task-page__cross::after {
+  transform: rotate(45deg);
+}
